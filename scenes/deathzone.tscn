@@ -1,0 +1,476 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhjmm7lt58lyx"]
+
+[ext_resource type="Script" path="res://scripts/deathzone.gd" id="1_nbh0c"]
+[ext_resource type="Texture2D" uid="uid://bn15qw3xs3w3o" path="res://assets/sprites/world_tileset.png" id="2_mswns"]
+[ext_resource type="AudioStream" uid="uid://b77rwpn5bwhf" path="res://assets/hurt.wav" id="2_wda1y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bacuf"]
+radius = 14.0
+height = 1076.0
+
+[node name="deathzone" type="Area2D"]
+position = Vector2(59, -18)
+script = ExtResource("1_nbh0c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_bacuf")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_wda1y")
+volume_db = -7.0
+
+[node name="sprites" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 483)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(0, 525)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(0, 511)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(0, 497)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 425.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 467.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 453.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 439.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(0, 368)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(0, 410)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+position = Vector2(0, 396)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D12" type="Sprite2D" parent="."]
+position = Vector2(0, 382)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D13" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 310.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D14" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 352.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D15" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 338.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D16" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 324.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D17" type="Sprite2D" parent="."]
+position = Vector2(0, 253)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D18" type="Sprite2D" parent="."]
+position = Vector2(0, 295)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D19" type="Sprite2D" parent="."]
+position = Vector2(0, 281)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D20" type="Sprite2D" parent="."]
+position = Vector2(0, 267)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D21" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 195.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D22" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 237.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D23" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 223.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D24" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 209.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D25" type="Sprite2D" parent="."]
+position = Vector2(0, 138)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D26" type="Sprite2D" parent="."]
+position = Vector2(0, 180)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D27" type="Sprite2D" parent="."]
+position = Vector2(0, 166)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D28" type="Sprite2D" parent="."]
+position = Vector2(0, 152)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D29" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 80.1557)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D30" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 122.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D31" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 108.156)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D32" type="Sprite2D" parent="."]
+position = Vector2(-0.517296, 94.1557)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D33" type="Sprite2D" parent="."]
+position = Vector2(1.00001, 23)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D34" type="Sprite2D" parent="."]
+position = Vector2(1.00001, 65)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D35" type="Sprite2D" parent="."]
+position = Vector2(1.00001, 51)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D36" type="Sprite2D" parent="."]
+position = Vector2(1.00001, 37)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D37" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -34.8443)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D38" type="Sprite2D" parent="."]
+position = Vector2(0.482704, 7.15573)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D39" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -6.84427)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D40" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -20.8443)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D41" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -92)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D42" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -50)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D43" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -64)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D44" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -78)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D45" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -149.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D46" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -107.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D47" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -121.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D48" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -135.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D49" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -207)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D50" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -165)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D51" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -179)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D52" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -193)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D53" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -264.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D54" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -222.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D55" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -236.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D56" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -250.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D57" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -322)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D58" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -280)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D59" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -294)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D60" type="Sprite2D" parent="."]
+position = Vector2(1.00001, -308)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D61" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -379.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D62" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -337.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D63" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -351.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[node name="Sprite2D64" type="Sprite2D" parent="."]
+position = Vector2(0.482704, -365.844)
+rotation = 0.552083
+texture = ExtResource("2_mswns")
+region_enabled = true
+region_rect = Rect2(32, 162, 16, 14)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

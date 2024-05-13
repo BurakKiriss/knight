@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://701mdtmppxrs"]
+
+[ext_resource type="AudioStream" uid="uid://vkcdoykmkxy0" path="res://assets/sounds/yt1s.com - 2WEI  Survivor Epic Cover  Tomb Raider  Trailer 2 Music.mp3" id="1_a4an8"]
+
+[node name="music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_a4an8")
+volume_db = -10.0
+autoplay = true

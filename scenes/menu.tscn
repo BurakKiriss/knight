@@ -1,0 +1,76 @@
+[gd_scene load_steps=5 format=3 uid="uid://bna35jqesj2ay"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_pi0et"]
+[ext_resource type="TileSet" uid="uid://j0vwyy3vrae3" path="res://assets/tilemap.tres" id="2_2wkhr"]
+[ext_resource type="FontFile" uid="uid://cgqxva4v3cuql" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_6tvrk"]
+[ext_resource type="Texture2D" uid="uid://c1b6ag2om2pu5" path="res://assets/fonts/Arkaplan (2).png" id="4_ydr8w"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+script = ExtResource("1_pi0et")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 556.0
+theme_override_constants/margin_left = 400
+theme_override_constants/margin_right = 400
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.956863, 0.243137, 0.235294, 1)
+theme_override_colors/font_hover_color = Color(0.834609, 0.125068, 0.205062, 1)
+theme_override_font_sizes/font_size = 50
+text = "PLAY"
+
+[node name="quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.956863, 0.243137, 0.235294, 1)
+theme_override_colors/font_hover_color = Color(0.834609, 0.125068, 0.205062, 1)
+theme_override_font_sizes/font_size = 50
+text = "QUIT
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 69.0
+offset_right = 952.0
+offset_bottom = 197.0
+theme_override_colors/font_color = Color(0.363712, 0.176585, 0.133381, 1)
+theme_override_fonts/font = ExtResource("2_6tvrk")
+theme_override_font_sizes/font_size = 128
+text = "KNIGHT"
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("2_2wkhr")
+format = 2
+layer_0/name = "back"
+layer_1/name = "mid"
+layer_1/tile_data = PackedInt32Array()
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1130.5, 21)
+scale = Vector2(9.45399, 16.3364)
+texture = ExtResource("4_ydr8w")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
